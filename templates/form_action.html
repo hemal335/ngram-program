@@ -1,0 +1,36 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+
+
+
+        
+            <div id="content">
+                Hello Dear  <strong>{{name}}</strong> 
+            </div>
+
+
+            <div>
+                Your Email Id: {{email}}
+            </div>
+
+            <div>
+                Technology found 
+            </div>
+
+            <div>
+            	<textarea rows="10" cols="50">{{description}}</textarea>                  
+            </div>  
+
+                   
+            
+            <ul>
+        	
+        		<form> <input type="checkbox" name="love" value="love" id="love"><label for="love"> {{description}}</label> </form>
+				<li><h4><span class="label label-default"><a href="https://www.google.com/search?site=&source=hp&q={{n}}&oq={{n}}&gs_l=hp.3">{{description}}</a></span><h4></li>
+        	
+      		</ul>
+
+
+
+ {% endblock %}

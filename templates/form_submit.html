@@ -1,0 +1,41 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+       
+            <div id="content">
+                <form method="post" action="{{ url_for('hello') }}">
+                  <label for="yourname">Please enter your name:</label>
+                  <input type="text" name="yourname" /><br />
+                  <label for="youremail">Please enter your email:</label>
+                  <input type="text" name="youremail" /><br />
+                                 
+              <div class="title">
+                <h4>Please enter your tex</h4>
+              </div>
+
+                     <textarea rows="10" cols="50" name="description"> </textarea>
+                     <input type="submit" />
+                </form>
+               
+                <form id="click">
+                      Technology <input id="l" type="text" />
+                      <input id="print" type="button" value="Print"/>
+                </form>
+
+                <div class="row" align="left">
+                    <div class="col-xs-6 col-md-3">
+                      <a href="#" class="thumbnail">
+                          <img src="http://www.robertwmills.com/wp-content/uploads/2016/03/healthcare-technology-8-04-2015.jpg" alt="...">
+                      </a>
+                      </div>
+  ...
+                  </div>
+                  
+
+                  angular.module('ui.bootstrap.demo').controller('DateParserDemoCtrl', function ($scope, uibDateParser) {
+                    $scope.format = 'yyyy/MM/dd';
+                    $scope.date = new Date();
+                          
+    {% endblock %}
+                
+        
